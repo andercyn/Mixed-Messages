@@ -14,4 +14,6 @@ Each category will have eight entries, for a potential 512 message permutations.
 The program will be written in JavaScript and run through Node.js.
 
 ## Current Status
-Under development.
+Basic functionality has been completed. Potential future functionality:
+- list a history of previous messages
+- add a UI that will generate a message by pushing a button
