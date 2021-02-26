@@ -1,23 +1,22 @@
 const messageGenerator = () => {
     //These arrays will be used to generate the three categories of randomized words
-    const predictionWord = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth"];
+    const predictionWord = ["will", "will not", "should", "should not", "can", "cannot", "might", "might not"];
     
-    const verbWord = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth"];
+    const verbWord = ["steal", "buy", "sell", "make", "borrow", "rent", "find", "lose"];
 
-    const nounWord = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth"];
+    const nounWord = ["a house", "a car", "a business deal", "a book", "a childhood toy", "event tickets", "headphones", "a new phone"];
 
     //This function will be used to pull a random array element in the generator function
     const randElement = () => {
-        //holding place for function
+        return Math.floor(Math.random() * 8)
     ;}
 
     //This function will generate the random message
     const message = () => {
-        //holding place for function
-        return 'You ${predictionWord[randElement]} ${verbWord[randElement]} ${nounWord[randElement]} this week.'
+        return 'You '  + predictionWord[randElement()] +' ' + verbWord[randElement()] + ' ' + nounWord[randElement()] + ' ' + 'this week.'
     ;}
 
-    return message;
+    return message();
 }
 
-console.log(messageGenerator)
+console.log(messageGenerator())
