@@ -11,9 +11,13 @@ My program will generate random predictions about how the user should behave usi
 Each category will have eight entries, for a potential 512 message permutations. 
 
 ## Technologies
-The program will be written in JavaScript and run through Node.js.
+- JavaScript
+- Node.js
+- HTML
 
 ## Current Status
-Basic functionality has been completed. Potential future functionality:
+Basic functionality for generating a message has been completed and can be run through Node.js. An HTML UI is currently under development. 
+
+Potential future functionality:
+- CSS style sheet for the HTML page
 - list a history of previous messages
-- add a UI that will generate a message by pushing a button
